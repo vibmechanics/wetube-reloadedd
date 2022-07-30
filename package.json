@@ -2,7 +2,7 @@
     "name": "wetube",
     "version": "1.0.0",
     "description": "The best way to watch videos.",
-    "main": "index.js",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/vibmechanics/wetube-reloadedd.git"
@@ -10,7 +10,7 @@
     "author": "bj<vibmechanic@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "nodemon --exec babel-node index.js"
+        "dev": "nodemon --exec babel-node src/server.js"
     },
     "bugs": {
         "url": "https://github.com/vibmechanics/wetube-reloadedd/issues"
