@@ -1,5 +1,10 @@
+const fakeUser = {
+    username: "bj",
+    loggedIn: true,
+};
+
 export const trending = (req, res) => {
-    res.render("home", { pageTitle: "Home" });
+    res.render("home", { pageTitle: "Home", fakeUser });
 };
 export const see = (req, res) => {
     console.log(res.req.params.id);
