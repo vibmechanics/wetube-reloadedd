@@ -5,7 +5,32 @@ const fakeUser = {
 
 export const trending = (req, res) => {
     // const videos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const videos = [];
+    const videos = [
+        {
+            title: "First Vdieo",
+            rating: 5,
+            comments: 2,
+            createdAt: "2 minuts ago",
+            views: 59,
+            id: 1,
+        },
+        {
+            title: "Second Vdieo",
+            rating: 5,
+            comments: 2,
+            createdAt: "2 minuts ago",
+            views: 59,
+            id: 1,
+        },
+        {
+            title: "Third Vdieo",
+            rating: 5,
+            comments: 2,
+            createdAt: "2 minuts ago",
+            views: 59,
+            id: 1,
+        },
+    ];
     return res.render("home", { pageTitle: "Home", fakeUser, videos });
 };
 export const see = (req, res) => {
